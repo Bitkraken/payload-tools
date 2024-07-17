@@ -14,6 +14,20 @@ export const error: OpenAPIV3.SchemaObject = {
           message: {
             type: 'string',
           },
+          name: {
+            type: 'string
+          },
+          data: {
+            type: 'array',
+            items: {
+              type: 'object',
+              required: ['field', 'message'],
+              properties: {
+                field: { type: 'string' },
+                message: { type: 'string' }
+              }
+            }
+          }
         },
         required: ['message'],
       },

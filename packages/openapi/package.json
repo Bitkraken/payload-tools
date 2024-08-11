@@ -1,5 +1,5 @@
 {
-  "name": "@bitkraken/payload-swagger",
+  "name": "@bitkraken/payload-openapi",
   "version": "1.4.0",
   "description": "Create openapi documentation for your payload cms",
   "main": "dist/index.js",

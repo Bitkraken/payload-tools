@@ -6,7 +6,7 @@ export type { EndpointDocumentation, Example };
 type DocumentedEndpoint = Endpoint & EndpointDocumentation;
 
 export function defineEndpoint(endpoint: DocumentedEndpoint): Endpoint {
-  const { summary, description, responseSchema, errorResponseSchemas, queryParameters, custom, ...rest } = endpoint;
+  const { summary, description, responseSchema, errorResponseSchemas, requestBody, queryParameters, custom, ...rest } = endpoint;
   return {
     ...rest,
     custom: {
@@ -15,6 +15,7 @@ export function defineEndpoint(endpoint: DocumentedEndpoint): Endpoint {
         summary,
         description,
         responseSchema,
+        requestBody,
         errorResponseSchemas,
         queryParameters,
       },

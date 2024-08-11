@@ -1442,7 +1442,8 @@
         "required": [
           "id",
           "updatedAt",
-          "createdAt"
+          "createdAt",
+          "email"
         ]
       },
       "userss": {

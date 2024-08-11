@@ -1,3 +1,4 @@
+
 import { objectEntries, objectValues } from 'ts-powertools';
 import { Select } from './types';
 
@@ -12,10 +13,16 @@ export const selectInternal = <T extends TypeWithID>(fields: Partial<Record<keyo
   const omitOnly = objectValues(fields).every(field => !field);
 
   return objectEntries(fields).reduce(
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     (result, [key, value]) => {
       if (toBoolean(value)) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         result[key] = doc[key];
       } else {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         delete result[key];
       }
 

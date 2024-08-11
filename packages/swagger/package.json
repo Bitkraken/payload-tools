@@ -1,6 +1,6 @@
 {
   "name": "@bitkraken/payload-swagger",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Swagger plugin for payload cms",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "payload-openapi": "^1.4.0",
+    "@bitkraken/payload-openapi": "^1.4.0",
     "swagger-ui-express": "^5.0.1"
   },
   "peerDependencies": {

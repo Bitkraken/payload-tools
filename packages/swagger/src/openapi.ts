@@ -1,8 +1,7 @@
 import { Endpoint } from 'payload/config';
 import { CollectionConfig, GlobalConfig } from 'payload/types';
 
-import type { EndpointDocumentation, Example } from 'payload-openapi';
-export type { EndpointDocumentation, Example } from 'payload-openapi';
+import type { EndpointDocumentation, Example } from '@bitkraken/payload-openapi';
 
 type DocumentedEndpoint = Endpoint & EndpointDocumentation;
 

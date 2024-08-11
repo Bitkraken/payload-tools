@@ -19,6 +19,7 @@ const config: Config = {
           path: '/echo/:value',
           method: 'get',
           responseSchema: { type: 'string' },
+          requestBody: { type: 'string' },
           handler: (req, res) => {
             const { value } = req.params;
             res.json(value);

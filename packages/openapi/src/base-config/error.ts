@@ -15,7 +15,7 @@ export const error: OpenAPIV3.SchemaObject = {
             type: 'string',
           },
           name: {
-            type: 'string
+            type: 'string',
           },
           data: {
             type: 'array',
@@ -24,10 +24,10 @@ export const error: OpenAPIV3.SchemaObject = {
               required: ['field', 'message'],
               properties: {
                 field: { type: 'string' },
-                message: { type: 'string' }
-              }
-            }
-          }
+                message: { type: 'string' },
+              },
+            },
+          },
         },
         required: ['message'],
       },

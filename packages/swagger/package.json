@@ -1,5 +1,5 @@
 {
-  "name": "payload-swagger",
+  "name": "@bitkraken/payload-swagger",
   "version": "1.4.0",
   "description": "Swagger plugin for payload cms",
   "main": "dist/index.js",
